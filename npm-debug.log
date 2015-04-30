@@ -1,0 +1,183 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose install where, deps [ '/home/kali/Softwares/node-v0.12.0/Node_programs/Del',
+4 verbose install   [ 'body-parser',
+4 verbose install     'cookie-parser',
+4 verbose install     'debug',
+4 verbose install     'express',
+4 verbose install     'jade',
+4 verbose install     'morgan',
+4 verbose install     'serve-favicon',
+4 verbose install     'cheerio',
+4 verbose install     'node-summary',
+4 verbose install     'zlib' ] ]
+5 verbose install where, peers [ '/home/kali/Softwares/node-v0.12.0/Node_programs/Del', [] ]
+6 info preinstall Del@0.0.0
+7 verbose already installed skipping jade@~1.9.2 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+8 verbose already installed skipping morgan@~1.5.1 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+9 verbose already installed skipping serve-favicon@~2.2.0 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+10 verbose already installed skipping cheerio@* /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+11 verbose already installed skipping node-summary@* /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+12 silly cache add args [ 'zlib@*', null ]
+13 verbose cache add spec zlib@*
+14 silly cache add parsed spec { raw: 'zlib@*',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'zlib',
+14 silly cache add   rawSpec: '*',
+14 silly cache add   spec: '*',
+14 silly cache add   type: 'range' }
+15 verbose addNamed zlib@*
+16 silly addNamed semver.valid null
+17 silly addNamed semver.validRange *
+18 silly addNameRange { name: 'zlib', range: '*', hasData: false }
+19 silly mapToRegistry name zlib
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/zlib
+23 verbose addNameRange registry:https://registry.npmjs.org/zlib not in flight; fetching
+24 verbose already installed skipping body-parser@^1.12.2 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+25 verbose request uri https://registry.npmjs.org/zlib
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 14:17:30
+28 verbose request id d06125caa6913141
+29 verbose etag "EBQNZSBGN9EL34IT3BLYCYHQA"
+30 http request GET https://registry.npmjs.org/zlib
+31 verbose already installed skipping cookie-parser@~1.3.4 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+32 verbose already installed skipping debug@~2.1.1 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+33 verbose already installed skipping express@~4.12.0 /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+34 http 304 https://registry.npmjs.org/zlib
+35 silly get cb [ 304,
+35 silly get   { date: 'Wed, 22 Apr 2015 18:17:31 GMT',
+35 silly get     server: 'Apache',
+35 silly get     via: '1.1 varnish',
+35 silly get     'last-modified': 'Wed, 22 Apr 2015 18:17:31 GMT',
+35 silly get     'cache-control': 'max-age=60',
+35 silly get     etag: '"EBQNZSBGN9EL34IT3BLYCYHQA"',
+35 silly get     age: '0',
+35 silly get     'x-served-by': 'cache-jfk1023-JFK',
+35 silly get     'x-cache': 'MISS',
+35 silly get     'x-cache-hits': '0',
+35 silly get     'x-timer': 'S1429726651.407889,VS0,VE19',
+35 silly get     vary: 'Accept',
+35 silly get     'content-length': '0',
+35 silly get     'keep-alive': 'timeout=10, max=50',
+35 silly get     connection: 'Keep-Alive' } ]
+36 verbose etag https://registry.npmjs.org/zlib from cache
+37 verbose get saving zlib to /home/kali/.npm/registry.npmjs.org/zlib/.cache.json
+38 silly addNameRange number 2 { name: 'zlib', range: '*', hasData: true }
+39 silly addNameRange versions [ 'zlib',
+39 silly addNameRange   [ '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5' ] ]
+40 verbose addNamed zlib@1.0.5
+41 silly addNamed semver.valid 1.0.5
+42 silly addNamed semver.validRange 1.0.5
+43 silly cache afterAdd zlib@1.0.5
+44 verbose afterAdd /home/kali/.npm/zlib/1.0.5/package/package.json not in flight; writing
+45 verbose afterAdd /home/kali/.npm/zlib/1.0.5/package/package.json written
+46 silly install resolved [ { name: 'zlib',
+46 silly install resolved     description: 'Simple, synchronous deflate/inflate for buffers',
+46 silly install resolved     version: '1.0.5',
+46 silly install resolved     homepage: 'https://github.com/kkaefer/node-zlib',
+46 silly install resolved     author: { name: 'Konstantin Käfer', email: 'kkaefer@gmail.com' },
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/kkaefer/node-zlib.git' },
+46 silly install resolved     engines: { node: '>=0.2.0' },
+46 silly install resolved     licenses: [ [Object] ],
+46 silly install resolved     main: './lib/zlib',
+46 silly install resolved     _npmJsonOpts:
+46 silly install resolved      { file: '/Users/kkaefer/.npm/zlib/1.0.5/package/package.json',
+46 silly install resolved        contributors: false,
+46 silly install resolved        serverjs: false,
+46 silly install resolved        wscript: true },
+46 silly install resolved     _id: 'zlib@1.0.5',
+46 silly install resolved     scripts: { preinstall: 'node-waf clean || true; node-waf configure build' },
+46 silly install resolved     dependencies: {},
+46 silly install resolved     devDependencies: {},
+46 silly install resolved     _engineSupported: true,
+46 silly install resolved     _npmVersion: '1.0.23',
+46 silly install resolved     _nodeVersion: 'v0.4.9',
+46 silly install resolved     _defaultsLoaded: true,
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '6e7c972fc371c645a6afb03ab14769def114fcc0',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+46 silly install resolved     directories: {},
+46 silly install resolved     _shasum: '6e7c972fc371c645a6afb03ab14769def114fcc0',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/zlib/-/zlib-1.0.5.tgz',
+46 silly install resolved     _from: 'zlib@*',
+46 silly install resolved     bugs: { url: 'https://github.com/kkaefer/node-zlib/issues' },
+46 silly install resolved     readme: 'ERROR: No README data found!' } ]
+47 info install zlib@1.0.5 into /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+48 info installOne zlib@1.0.5
+49 verbose installOne of zlib to /home/kali/Softwares/node-v0.12.0/Node_programs/Del not in flight; installing
+50 verbose lock using /home/kali/.npm/_locks/zlib-dc5de62919383180.lock for /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+51 silly install write writing zlib 1.0.5 to /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+52 silly cache addNamed cb zlib@1.0.5
+53 verbose unbuild node_modules/zlib
+54 verbose gentlyRm vacuuming /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+55 verbose tar unpack /home/kali/.npm/zlib/1.0.5/package.tgz
+56 verbose tar unpacking to /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+57 verbose gentlyRm vacuuming /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+58 silly gunzTarPerm modes [ '775', '664' ]
+59 silly gunzTarPerm extractEntry .gitignore
+60 silly gunzTarPerm modified mode [ '.gitignore', 420, 436 ]
+61 silly gunzTarPerm extractEntry configure
+62 silly gunzTarPerm modified mode [ 'configure', 493, 509 ]
+63 silly gunzTarPerm extractEntry index.js
+64 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+65 silly gunzTarPerm extractEntry LICENSE
+66 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+67 silly gunzTarPerm extractEntry Makefile
+68 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+69 silly gunzTarPerm extractEntry package.json
+70 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+71 silly gunzTarPerm extractEntry README.md
+72 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+73 silly gunzTarPerm extractEntry wscript
+74 silly gunzTarPerm modified mode [ 'wscript', 420, 436 ]
+75 silly gunzTarPerm extractEntry lib/zlib.js
+76 silly gunzTarPerm modified mode [ 'lib/zlib.js', 420, 436 ]
+77 silly gunzTarPerm extractEntry src/node-zlib.cc
+78 silly gunzTarPerm modified mode [ 'src/node-zlib.cc', 420, 436 ]
+79 silly gunzTarPerm extractEntry test/deflate.test.js
+80 silly gunzTarPerm modified mode [ 'test/deflate.test.js', 420, 436 ]
+81 silly gunzTarPerm extractEntry test/inflate.test.js
+82 silly gunzTarPerm modified mode [ 'test/inflate.test.js', 420, 436 ]
+83 info preinstall zlib@1.0.5
+84 verbose unsafe-perm in lifecycle true
+85 info zlib@1.0.5 Failed to exec preinstall script
+86 verbose unlock done using /home/kali/.npm/_locks/zlib-dc5de62919383180.lock for /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+87 verbose stack Error: zlib@1.0.5 preinstall: `node-waf clean || true; node-waf configure build`
+87 verbose stack Exit status 127
+87 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+87 verbose stack     at EventEmitter.emit (events.js:110:17)
+87 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+87 verbose stack     at ChildProcess.emit (events.js:110:17)
+87 verbose stack     at maybeClose (child_process.js:1008:16)
+87 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1080:5)
+88 verbose pkgid zlib@1.0.5
+89 verbose cwd /home/kali/Softwares/node-v0.12.0/Node_programs/Del
+90 error Linux 3.13.0-49-generic
+91 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+92 error node v0.12.0
+93 error npm  v2.5.1
+94 error code ELIFECYCLE
+95 error zlib@1.0.5 preinstall: `node-waf clean || true; node-waf configure build`
+95 error Exit status 127
+96 error Failed at the zlib@1.0.5 preinstall script 'node-waf clean || true; node-waf configure build'.
+96 error This is most likely a problem with the zlib package,
+96 error not with npm itself.
+96 error Tell the author that this fails on your system:
+96 error     node-waf clean || true; node-waf configure build
+96 error You can get their info via:
+96 error     npm owner ls zlib
+96 error There is likely additional logging output above.
+97 verbose exit [ 1, true ]
+98 verbose unbuild node_modules/zlib
+99 info preuninstall zlib@1.0.5
+100 info uninstall zlib@1.0.5
+101 verbose unbuild rmStuff zlib@1.0.5 from /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules
+102 info postuninstall zlib@1.0.5
+103 verbose gentlyRm vacuuming /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+104 silly gentlyRm purging /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules/zlib
+105 silly gentlyRm quitting because other entries in /home/kali/Softwares/node-v0.12.0/Node_programs/Del/node_modules

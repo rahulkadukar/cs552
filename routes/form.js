@@ -1,0 +1,24 @@
+var express = require('express');
+var bodyParser = require('body-parser');
+var app = express();
+var router = express.Router();
+
+app.use(bodyParser());
+
+app.get('/', function(req,res){
+res.send('<form method="post" action="/">' +
+           '<input type="hidden" name="_method" value="put" />' +
+           'Your Query: <input type="text" name="query" />' +
+           '<input type="submit" />' +
+           '</form>');
+//res.send('kalidas');
+
+});
+
+app.post('/form', function(req, res) {
+  var query = req.body.query;
+  var html = 'Hello ' +  query + '<br>'
+  res.send(html);
+});
+
+module.exports = app;
