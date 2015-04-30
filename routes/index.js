@@ -4,6 +4,12 @@ var router = express.Router();
 var http = require('http');
 var SummaryTool = require('node-summary');
 
+// Twilio Credentials
+var accountSid = 'AC32449fa4839ef6c070a5a92fbd7dc2fa';
+var authToken = '7684de5636c088ab69110d28b0e41d56'; 
+
+var client = require('twilio')(accountSid, authToken); 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
 		res.render('index', { title: 'Express' });
@@ -69,8 +75,21 @@ router.post('/', function(req, res, next) {
 				});
 //console.log(para1);
 //console.log(para2);
+				
+
+					
+				
+
 				SummaryTool.summarize(para1,para2, function(err, summary) {
 						if(err) console.log("Summarization went wrong !");
+						
+						client.messages.create({
+							to: "7327628582",
+							from: "+15128724850",
+							body: summary,  
+						}, function(err, message) {
+							console.log(message.sid);
+						})							
 
 						console.log(summary);
 
